@@ -10,3 +10,9 @@ with open('.env') as env_file:
 
 # Find missing keys
 missing_keys = example_keys - env_keys
+
+# Output the results
+if missing_keys:
+    print('Missing keys in .env:', missing_keys)
+else:
+    print('All keys are present in .env.')
